@@ -41,7 +41,7 @@
 #survey-form > h3 {
   font-size: 1.3rem;
   color: white;
-  margin-bottom: 5px;
+  margin: 15px 0 5px 0;
 }
 
 #survey-form #name, #survey-form #email {
@@ -55,6 +55,15 @@
   height: 25px;
   border-radius: 9px;
   border-style: none;
+}
+
+#number-label > input::-webkit-outer-spin-button, #number-label > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#number-label > input[type=number] {
+  -moz-appearance: textfield;
 }
 
 footer {
