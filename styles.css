@@ -6,44 +6,82 @@
 
 .bg-image {
   position: absolute;
+  left: 0;
+  top: 0;
   height: 100%; 
   width: 100%; 
-  background-image: url("https://images.unsplash.com/photo-1536009190979-329b94ad4d57?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url("https://images.unsplash.com/photo-1704739300067-0cfbf8eb8bd3?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-filter: brightness(0.9);
+  filter: brightness(0.9);
   z-index: -1;
 }
 
 .container {
+  width: 560px;
+  background: linear-gradient(45deg, #E6B5A3E6, #F2CCBBE6);
+  margin: 20px auto;
+  padding: 5px;
+  border-radius: 9px;
   z-index: 2;
-  
+}
+
+#survey-form {
+  width: 95%;
+  margin: 10px auto;
+}
+
+#title, #description{
+  text-align: center;
+  color: white;
+}
+
+#survey-form > h3 {
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 5px;
+}
+
+#survey-form #name, #survey-form #email {
+  width: 100%;
+  height: 25px;
+  border-radius: 9px;
+  border-style: none;
+}
+
+#survey-form #number {
+  height: 25px;
+  border-radius: 9px;
+  border-style: none;
 }
 
 footer {
-  background: linear-gradient(45deg, #A68C68CC, #C3AF8ECC);
-  width: 300px;
+  background: linear-gradient(45deg, #E6B5A3E6, #F2CCBBE6);
+  opacity: 0.9;
+  width: 280px;
   text-align: center;
   margin: 0 auto 20px auto;
   padding: 5px;
   color: white;
-  border-radius: 15px;
+  border-radius: 9px;
   z-index: 2;
 }
 
 footer > p > a {
-  color: #3C2808;
+  color: #7D89A0;
   text-decoration: none;
 }
 
 footer > p > a:visited {
-  color: #3C2808;
+  color: #7D89A0;
 }
 
 footer > p > a:hover {
-  color: #A68245;
+  color: #A79494;
 }
 
 footer > p > a:active {
-  color: #A68245;
+  color: #A79494;
 }
