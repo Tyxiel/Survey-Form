@@ -1,6 +1,7 @@
 * { 
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 } 
 
@@ -24,13 +25,18 @@
   background: linear-gradient(45deg, #E6B5A3E6, #F2CCBBE6);
   margin: 20px auto;
   padding: 5px;
-  border-radius: 9px;
+  border-radius: 0.25rem;
   z-index: 2;
 }
 
 #survey-form {
   width: 95%;
   margin: 10px auto;
+  padding: 1rem;;
+}
+
+#title {
+  margin-top: 50px;
 }
 
 #title, #description{
@@ -38,23 +44,33 @@
   color: white;
 }
 
+#survey-form > h3:first-child {
+  margin-top: 0;
+}
+
 #survey-form > h3 {
+  display: inline-block;
   font-size: 1.3rem;
   color: white;
   margin: 15px 0 5px 0;
 }
 
-#survey-form #name, #survey-form #email {
-  width: 100%;
-  height: 25px;
-  border-radius: 9px;
-  border-style: none;
+.optional {
+  display: inline-block;
+  color: white;
+  font-weight: 400;
+  margin: 0 0 0 4px;
 }
 
-#survey-form #number {
-  height: 25px;
-  border-radius: 9px;
+
+
+#name, #email, #number {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border-radius: 0.25rem;
   border-style: none;
+  border: 1px solid lightpink;
 }
 
 #number-label > input::-webkit-outer-spin-button, #number-label > input::-webkit-inner-spin-button {
@@ -64,6 +80,20 @@
 
 #number-label > input[type=number] {
   -moz-appearance: textfield;
+}
+
+#dropdown-label {
+  color: white;
+}
+
+#dropdown {
+  width: 100%;
+  height: 30px;
+  border-radius: 0.25rem;
+  border-style: none;
+  margin: 5px 0 15px 0;
+  background-color: white;
+  padding: 5px;
 }
 
 footer {

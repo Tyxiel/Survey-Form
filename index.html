@@ -9,27 +9,34 @@
 <body>
   <main>
     <div class="bg-image"></div>
-    <div class="container">
-      <h1 id="title">Survey Form</h1>
+    <h1 id="title">Survey Form</h1>
       <p id="description"><em>This survey help us make a better website for you</em></p>
+      
+    <div class="container">
       <form id="survey-form">
         <h3>Name</h3>
-        <label id="name-label"><input required type="text" id="name" placeholder=" Enter your name"></label>
+        <label id="name-label"><input required type="text" id="name" placeholder="Enter your name"></label>
         <h3>Email</h3>
-        <label id="email-label"><input required type="email" id="email" placeholder=" Enter your email"></label>
-        <h3>Age</h3>
-        <label id="number-label"><input required type="number" id="number" min="13" max="120" placeholder=" Enter your age"></label>
+        <label id="email-label"><input required type="email" id="email" placeholder="Enter your email"></label>
+        <h3>Age</h3><p class="optional">(optional)</p>
+        <label id="number-label"><input type="number" id="number" min="13" max="120" placeholder="Enter your age"></label>
         <h3></h3>
-        <label>
+        <label id="dropdown-label"><h3>How satisfied are you with our services?</h3>
           <select id="dropdown">
-
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="very-satisfied">Very Satisfied</option>
+            <option value="satisfied">Satisfied</option>
+            <option value="neutral">Neutral</option>
+            <option value="unsatisfied">Unsatisfied</option>
+            <option value="very-unsatisfied">Very Unsatisfied</option>
           </select>
         </label>
+        <input type="radio"
       </form>
     </div>
   </main>
   <footer>
-    <p>No Copyright - Made by Tyxiel</p>
+    <p>No Copyright - Made by <a href="https://github.com/Tyxiel">Tyxiel</a></p>
     <p>Photo by <a href="https://unsplash.com/@betagamma">Daniil Silantev</a> on <a href="https://unsplash.com/photos/a-group-of-trees-that-are-covered-in-snow-eNnGiKM-IjE">Unsplash</a></p>
   </footer>
 </body>
