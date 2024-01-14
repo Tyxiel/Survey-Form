@@ -94,17 +94,22 @@
   margin: 5px 0 15px 0;
   background-color: white;
   padding: 5px;
+  transition: height 0.5s ease;
+}
+
+#dropdown.expanded {
+  height: auto; 
 }
 
 footer {
   background: linear-gradient(45deg, #E6B5A3E6, #F2CCBBE6);
-  opacity: 0.9;
   width: 280px;
+  font-size: 0.95rem;
   text-align: center;
   margin: 0 auto 20px auto;
   padding: 5px;
   color: white;
-  border-radius: 9px;
+  border-radius: 0.25rem;
   z-index: 2;
 }
 
