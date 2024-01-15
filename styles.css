@@ -6,7 +6,7 @@
 } 
 
 .bg-image {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   height: 100%; 
@@ -15,6 +15,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   -webkit-filter: brightness(0.9);
   filter: brightness(0.9);
   z-index: -1;
@@ -25,7 +26,7 @@
   background: linear-gradient(45deg, #E6B5A3E6, #F2CCBBE6);
   margin: 20px auto;
   padding: 5px;
-  border-radius: 0.25rem;
+  border-radius: 0.3rem;
   z-index: 2;
 }
 
@@ -68,8 +69,8 @@
   width: 100%;
   height: 30px;
   padding: 5px;
-  border-radius: 0.25rem;
-  border-style: none;
+  border-radius: 0.3rem;
+  border-style: none; 
   border: 1px solid lightpink;
 }
 
@@ -80,6 +81,7 @@
 
 #number-label > input[type=number] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 #dropdown-label {
@@ -89,7 +91,7 @@
 #dropdown {
   width: 100%;
   height: 30px;
-  border-radius: 0.25rem;
+  border-radius: 0.3rem;
   border-style: none;
   margin: 5px 0 15px 0;
   background-color: white;
@@ -97,8 +99,21 @@
   transition: height 0.5s ease;
 }
 
-#dropdown.expanded {
-  height: auto; 
+.radio-form input {
+  margin: 0 0 0 8px;
+  min-height: 1rem;
+  min-width: 1rem;
+}
+
+.radio-form p {
+  display: inline-block;
+  color: white;
+  font-weight: 500;
+  margin: 0 5px;
+}
+
+#very-easy, #somewhat-easy, #not-easy {
+  color: white;
 }
 
 footer {
@@ -109,7 +124,7 @@ footer {
   margin: 0 auto 20px auto;
   padding: 5px;
   color: white;
-  border-radius: 0.25rem;
+  border-radius: 0.3rem;
   z-index: 2;
 }
 
@@ -129,3 +144,5 @@ footer > p > a:hover {
 footer > p > a:active {
   color: #A79494;
 }
+
+/* Made By Tyxiel*/

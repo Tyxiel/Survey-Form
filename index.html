@@ -15,13 +15,13 @@
     <div class="container">
       <form id="survey-form">
         <h3>Name</h3>
-        <label id="name-label"><input required type="text" id="name" placeholder="Enter your name"></label>
+        <label id="name-label" for="name"><input required type="text" id="name" placeholder="Enter your name"></label>
         <h3>Email</h3>
-        <label id="email-label"><input required type="email" id="email" placeholder="Enter your email"></label>
+        <label id="email-label" for="email"><input required type="email" id="email" placeholder="Enter your email"></label>
         <h3>Age</h3><p class="optional">(optional)</p>
-        <label id="number-label"><input type="number" id="number" min="13" max="120" placeholder="Enter your age"></label>
+        <label id="number-label" for="number"><input type="number" id="number" min="13" max="120" placeholder="Enter your age"></label>
         <h3></h3>
-        <label id="dropdown-label"><h3>How satisfied are you with our services?</h3>
+        <label id="dropdown-label" for="dropdown"><h3>How satisfied are you with our services?</h3>
           <select id="dropdown">
             <option disabled="" selected="" value="">Select an option</option>
             <option value="very-satisfied">Very Satisfied</option>
@@ -31,7 +31,17 @@
             <option value="very-unsatisfied">Very Unsatisfied</option>
           </select>
         </label>
-        <input type="radio"
+        <h3>Ease of use:</h3>
+        <label for="very-easy" class="radio-form">
+          <input type="radio" name="ease-of-use" checked="" id="very-easy" value="very-easy"><p>Very Easy</p>
+        </label>
+        <label for="somewhat-easy" class="radio-form">
+          <input type="radio" name="ease-of-use" id="somewhat-easy" value="somewhat-easy"><p>Somewhat Easy</p>
+        </label>
+        <label for="not-easy" class="radio-form">
+          <input type="radio" name="ease-of-use" id="not-easy" value="not-easy"><p>Not Easy</p>
+        </label>
+
       </form>
     </div>
   </main>
@@ -42,3 +52,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+<!-- Made By Tyxiel -->
