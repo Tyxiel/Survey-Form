@@ -23,6 +23,7 @@
 
 .container {
   width: 560px;
+  height: 600px;
   background: linear-gradient(45deg, #E6B5A3E6, #F2CCBBE6);
   margin: 20px auto;
   padding: 5px;
@@ -49,7 +50,7 @@
   margin-top: 0;
 }
 
-#survey-form > h3 {
+#survey-form h3 {
   display: inline-block;
   font-size: 1.3rem;
   color: white;
@@ -62,8 +63,6 @@
   font-weight: 400;
   margin: 0 0 0 4px;
 }
-
-
 
 #name, #email, #number {
   width: 100%;
@@ -93,27 +92,59 @@
   height: 30px;
   border-radius: 0.3rem;
   border-style: none;
-  margin: 5px 0 15px 0;
+  margin: 5px 0 0 0;
   background-color: white;
   padding: 5px;
   transition: height 0.5s ease;
 }
 
+#ease {
+  width: 100%;
+}
+
 .radio-form input {
-  margin: 0 0 0 8px;
   min-height: 1rem;
   min-width: 1rem;
+  margin: 5px;
 }
 
 .radio-form p {
+  font-size: 1.05rem;
   display: inline-block;
+  max-width: 125px;
   color: white;
   font-weight: 500;
   margin: 0 5px;
 }
 
+#last-radio-p {
+  margin-right: 0;
+}
+
 #very-easy, #somewhat-easy, #not-easy {
   color: white;
+}
+
+#usage {
+  display: block;
+  width: 100%;
+  height: 30px;
+}
+
+.checkbox-form input {
+  min-height: 1rem;
+  min-width: 1rem;
+}
+
+.checkbox-form span {
+  font-size: 1.05rem;
+  margin: 0 13px 0 5.4px;
+  color: white;
+  font-weight: 500;
+}
+
+#last-checkbox-span {
+  margin-right: 0;
 }
 
 footer {
