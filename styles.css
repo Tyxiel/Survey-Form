@@ -23,7 +23,6 @@
 
 .container {
   width: 560px;
-  height: 660px;
   background: linear-gradient(45deg, #E6B5A3E6, #F2CCBBE6);
   margin: 20px auto;
   padding: 5px;
@@ -116,7 +115,6 @@
   max-width: 125px;
   color: white;
   font-weight: 500;
-  margin: 0 68.8px 0 0;
 }
 
 #last-radio-p {
