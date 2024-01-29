@@ -7,20 +7,24 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Main -->
   <main>
     <div class="bg-image"></div>
+    <!-- Tittle -->
     <h1 id="title">Survey Form</h1>
-      <p id="description"><em>This survey help us make a better website for you</em></p>
-      
+    <p id="description"><em>This survey help us make a better website for you</em></p>
     <div class="container">
       <form id="survey-form">
+        <!-- Name Form -->
         <h3>Name</h3>
         <label id="name-label" for="name"><input required type="text" id="name" placeholder="Enter your name"></label>
+        <!-- Email Form -->
         <h3>Email</h3>
         <label id="email-label" for="email"><input required type="email" id="email" placeholder="Enter your email"></label>
+        <!-- Number/Age Form -->
         <h3>Age</h3><p class="optional">(optional)</p>
         <label id="number-label" for="number"><input type="number" id="number" min="13" max="120" placeholder="Enter your age"></label>
-        <h3></h3>
+        <!-- Dropdown Form -->
         <label id="dropdown-label" for="dropdown"><h3>How satisfied are you with our services?</h3>
           <select id="dropdown">
             <option disabled="" selected="" value="">Select an option</option>
@@ -31,6 +35,7 @@
             <option value="very-unsatisfied">Very Unsatisfied</option>
           </select>
         </label>
+        <!-- Radio Form -->
         <h3 id="ease">Ease of Use:</h3>
         <label for="very-easy" class="radio-form">
           <input type="radio" name="ease-of-use" checked="" id="very-easy" value="very-easy"><p>Very Easy</p>
@@ -41,6 +46,7 @@
         <label for="not-easy" class="radio-form">
           <input type="radio" name="ease-of-use" id="not-easy" value="not-easy"><p id="last-radio-p">Not Easy</p>
         </label>
+        <!-- Checkbox Form -->
         <h3 id="usage">Usage Frequency:</h3>
         <label for="daily" class="checkbox-form">
           <input type="checkbox"><span>Daily</span>
@@ -57,14 +63,19 @@
         <label for="rarely" class="checkbox-form">
           <input type="checkbox"><span id="last-checkbox-span">Rarely</span>
         </label>
+        <!-- Textarea Form -->
+        <h3>Any other thing you would like to share with us?</h3>
+        <label for="textarea"><textarea rows="4" cols="60" placeholder="It would be good to have......"></textarea></label>
+        <!-- Submit Button -->
+        <input id="submit" type="submit" value="Submit">
       </form>
     </div>
   </main>
+  <!-- Footer -->
   <footer>
     <p>No Copyright - Made by <a href="https://github.com/Tyxiel">Tyxiel</a></p>
     <p>Photo by <a href="https://unsplash.com/@betagamma">Daniil Silantev</a> on <a href="https://unsplash.com/photos/a-group-of-trees-that-are-covered-in-snow-eNnGiKM-IjE">Unsplash</a></p>
   </footer>
 </body>
 </html>
-
-<!-- Made By Tyxiel -->
+<!-- Made By Tyxiel - github.com/Tyxiel -->
